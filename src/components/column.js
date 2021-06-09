@@ -2,9 +2,9 @@ import "../styles/main.css";
 
 const column = (props) => {
     return(
-        <div className="col">
-            <img src="" alt=""/>
-            <h2>{props.carName}</h2>
+        <div className={props.class}>
+            <img src={props.carImage} alt=""/>
+            <h1>{props.carName}</h1>
             <p>{props.description}</p>
             <button>Learn More</button>
         </div>

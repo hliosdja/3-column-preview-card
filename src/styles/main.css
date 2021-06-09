@@ -2,19 +2,87 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: hsl(0, 0%, 95%);
 }
 
 .container {
   display: flex;
-  border: 1px solid blue;
-  margin: auto auto;
+  align-items: center;
+  margin: 0 auto;
 
-  width: 80%;
-  height: 50vh;
+  width: 45%;
+  height: 100vh;
 }
 
-.col {
+.sedans {
   flex: 1;
-  border: 1px solid red;
-  padding: 2rem;
+  padding: 3rem 2.5rem;
+  height: 21.88rem;
+  background-color: hsl(31, 77%, 52%);
+}
+
+.suvs {
+  flex: 1;
+  padding: 3rem 2.5rem;
+  height: 21.88rem;
+  background-color: hsl(184, 100%, 22%);
+}
+
+.luxury {
+  flex: 1;
+  padding: 3rem 2.5rem;
+  height: 21.88rem;
+  background-color: hsl(179, 100%, 13%);
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+h1 {
+  font-family: "Big Shoulders Display", cursive;
+  text-transform: uppercase;
+  color: hsl(0, 0%, 95%);
+}
+
+p {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+  color: hsla(0, 0%, 100%, 0.75);
+  line-height: 1.5rem;
+}
+
+button {
+  margin-top: 2rem;
+  background-color: hsl(0, 0%, 95%);
+  padding: 1rem 1.5rem;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+  mix-blend-mode: screen;
+}
+
+button:active {
+  padding: 0.85rem 1.35rem;
+  border: 2px solid hsl(0, 0%, 95%);
+  color: hsl(0, 0%, 95%);
+  background: none;
+}
+
+@media only screen and (max-width: 375px) {
+  .container {
+    display: block;
+    width: 80%;
+    margin: 2rem auto 2rem;
+  }
+
+  .wrapper {
+    display: block;
+    width: 100%;
+  }
 }
