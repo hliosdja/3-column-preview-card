@@ -77,13 +77,25 @@ button:active {
 @media only screen and (max-width: 375px) {
   .container {
     display: block;
-    width: 80%;
-    margin: 2rem auto 2rem;
+    width: 90% !important;
+    margin: 2rem auto 2rem !important;
   }
 
   .wrapper {
     display: block;
     width: 100%;
+  }
+
+  .sedans {
+    height: auto;
+  }
+
+  .suvs {
+    height: auto;
+  }
+
+  .luxury {
+    height: auto;
   }
 }
 
